@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #d9534f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+#menu {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #d9534f;
+}
+
+.pizza-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.pizza-item:last-child {
+    border-bottom: none;
+}
+
+.pizza-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.price {
+    float: right;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

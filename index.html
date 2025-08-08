@@ -1,13 +1,45 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Jules Pizzeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Chez Jules Pizzeria</h1>
+        <p>Les meilleures pizzas de la ville !</p>
+    </header>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <main>
+        <section id="menu">
+            <h2>Notre Menu</h2>
+            <div class="pizza-item">
+                <h3>Margherita</h3>
+                <p>Sauce tomate, mozzarella, basilic frais.</p>
+                <p class="price">10€</p>
+            </div>
+            <div class="pizza-item">
+                <h3>Pepperoni</h3>
+                <p>Sauce tomate, mozzarella, pepperoni.</p>
+                <p class="price">12€</p>
+            </div>
+            <div class="pizza-item">
+                <h3>Reine</h3>
+                <p>Sauce tomate, mozzarella, jambon, champignons.</p>
+                <p class="price">13€</p>
+            </div>
+            <div class="pizza-item">
+                <h3>4 Fromages</h3>
+                <p>Mozzarella, gorgonzola, parmesan, chèvre.</p>
+                <p class="price">14€</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chez Jules Pizzeria. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
